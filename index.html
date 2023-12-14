@@ -20,15 +20,134 @@
 </head>
 <body>
   <div id="app-container">
-    <nav id="app-navbar">
+    <nav id="app-navbar" class="d-flex">
+      <div class="app-navbar-top">
+        <ul>
+          <li><a href="#"><img src="./img/logo.svg" class="logo-spotify" alt="logo-spotify"></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">La tua libreria</a></li>
+          <li><a href="#">Crea Playlist</a></li>
+          <li><a href="#">Nome playlist</a></li>
+          <li><a href="#">Nome playlist</a></li>
+          <li><a href="#">Nome playlist</a></li>
+          <li><a href="#">Nome playlist</a></li>
+          <li><a href="#">Nome playlist</a></li>
+          <li><a href="#">Nome playlist</a></li>
+          <li><a href="#">Nome playlist</a></li>
+        </ul>
+      </div>  
+      <div class="app-navbar-bottom">
+        <p>Installa</p>
+        <p>John Doe</p>
+      </div>      
     </nav>
     <main id="app-main">
-      <div id="main-top-bar">
+      <div id="main-top-bar" class="d-flex">
+        <a href="#" class="button">EFFETTA L'UPGRADE</a>
       </div>
-      <div id="main-content">        
+      <div id="main-content">
+        <div class="categories">
+          <ul class="d-flex">
+            <li>IN EVIDENZA</li>
+            <li>PODCAST</li>
+            <li>CLASSIFICHE</li>
+            <li>GENERI E MOOD</li>
+            <li>NUOVE USCITE</li>
+            <li>SCOPRI</li>
+          </ul>
+        </div>
+        <h2>Recently played</h2>
+        <div id="fare-griglia" class="d-flex">
+          <figure>
+            <img src="./img/metal_lifting.jpg" alt="album-thumbnail">
+            <figcaption>
+              <h3>Heavy metal</h3>
+              <p>Subtitle</p>
+            </figcaption>
+          </figure>
+          
+          <figure>
+            <img src="./img/aquietplace.jpeg" alt="album-thumbnail">
+            <figcaption>
+              <h3>Heavy metal</h3>
+              <p>Subtitle</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./img/aquietplace.jpeg" alt="album-thumbnail">
+            <figcaption>
+              <h3>Heavy metal</h3>
+              <p>Subtitle</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./img/aquietplace.jpeg" alt="album-thumbnail">
+            <figcaption>
+              <h3>Heavy metal</h3>
+              <p>Subtitle</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="./img/aquietplace.jpeg" alt="album-thumbnail">
+            <figcaption>
+              <h3>Heavy metal</h3>
+              <p>Subtitle</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <h2>Creato per John Doe</h2>
+        <div id="fare-griglia" class="d-flex">
+          <figure>
+            <img src="./img/metal_lifting.jpg" alt="album-thumbnail">
+            <figcaption>
+              <h3>Heavy metal</h3>
+              <p>Subtitle</p>
+            </figcaption>
+          </figure>
+          
+          <figure>
+            <img src="./img/aquietplace.jpeg" alt="album-thumbnail">
+            <figcaption>
+              <h3>Heavy metal</h3>
+              <p>Subtitle</p>
+            </figcaption>
+          </figure>
+        </div>
+
+
       </div>
     </main>
   </div>
-  <footer id="app-player"></footer>
+  <footer id="app-player" class="d-flex">
+    <div class="current-song d-flex">
+      <img src="./img/sinister.jpeg" class="current-song-thumbnail" alt="current-song-thumbnail">
+      <div class="wrapper-current-song-info">
+        <h4>Sinister</h4>
+        <p>Brano nome</p>
+      </div>
+      <span>&hearts;</span>
+      <span>&hearts;</span>      
+    </div>
+    <div class="player">
+      <ul class="d-flex">
+        <li>Testo</li>
+        <li>Testo</li>
+        <li>Testo</li>
+        <li>Testo</li>
+        <li>Testo</li>
+      </ul>
+    </div>
+    <div class="player-right-options">
+      <ul class="d-flex">
+        <li>Testo</li>
+        <li>Testo</li>
+        <li>Testo</li>
+      </ul>  
+    </div>
+  </footer>
 </body>
 </html>

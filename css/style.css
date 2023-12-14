@@ -43,6 +43,22 @@ li {
 #app-navbar {
   width: var(--app-navbar-width);
   background-color: var(--navbar-bg-color);
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.app-navbar-top {
+  border: 2px dashed red;
+}
+
+
+.app-navbar-bottom {
+  border: 2px dashed red;
+}
+
+.logo-spotify {
+  width: 150px;
 }
 
 
@@ -50,18 +66,70 @@ li {
 
 #app-main {
   flex-grow: 1;
+  border: 4px dashed green;
 }
 
 #main-top-bar {
   height: 70px;
   background-color: rgba(0, 0, 0, 0.1);
+  justify-content: flex-end;
+  align-items: center;
 }
 
+.button {
+  background-color: lightblue;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* .categories {
+  margin: 0 auto;
+  width: 100%;
+} */
+
+.categories ul {
+  justify-content: center;
+}
+
+.categories li {
+  padding: 0 5px;
+}
 
 /* APP PLAYER */
 
 #app-player {
   background-color: var(--player-bg-color);
   height: var(--player-height);
+  justify-content: space-between;
 }
 
+.current-song-thumbnail {
+  width: 80px;
+}
+
+.current-song {
+  border: 2px solid red;
+}
+.player {
+  border: 2px solid red;
+}
+.player-right-options {
+  border: 2px solid red;
+}
+
+/* debug */
+
+
+
+#fare-griglia figure {
+  margin: 0 10px;
+}
+
+#fare-griglia figcaption {
+  width: fit-content;
+  text-align: center;
+}
+
+#fare-griglia img {
+  width: 150px;
+}
