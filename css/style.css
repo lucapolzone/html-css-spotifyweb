@@ -70,7 +70,6 @@ span {
 
 .app-navbar-bottom {
   padding: 0 1rem;
-  border: 2px solid deeppink;
   margin-top: auto;
 }
 
@@ -115,8 +114,11 @@ span {
 #main-top-bar {
   height: 70px;
   background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(255, 0, 0, 0.5); */
   justify-content: flex-end;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 .btn {
@@ -164,7 +166,6 @@ span {
 }
 
 .card {
-  background-color: #333;
   text-align: center;
 }
 
@@ -172,13 +173,26 @@ span {
   width: 170px;
 }
 
+.card img:hover {
+  filter: brightness(40%);
+}
 
 
+figure {
+  
+}
+
+.fa-circle-play {
+  /* display: none; */
+  font-size: 5rem;
+  position: absolute;
+  /* bottom: 0; */
+}
 
 
 /* APP PLAYER */
 
-#app-player {
+footer#app-player {
   background-color: var(--player-bg-color);
   height: var(--player-height);
   justify-content: space-between;
@@ -205,28 +219,9 @@ span {
 
 }
 
-
-
 .player {
   border: 2px solid red;
 }
 .player-right-options {
   border: 2px solid red;
-}
-
-/* debug */
-
-
-
-#fare-griglia figure {
-  margin: 0 10px;
-}
-
-#fare-griglia figcaption {
-  width: fit-content;
-  text-align: center;
-}
-
-#fare-griglia img {
-  width: 150px;
 }
