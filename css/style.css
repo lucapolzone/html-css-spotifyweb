@@ -239,7 +239,7 @@ footer#app-player {
 
 .current-song {
   align-items: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 300px;
 }
 
@@ -256,7 +256,7 @@ footer#app-player {
 }
 
 .player {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
@@ -285,9 +285,19 @@ footer#app-player {
   border-radius: 3px;
 }
 
-
 .player-right-options {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 300px;
+  font-size: 1rem;
 }
 
+.player-right-options ul {
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+
+.player-right-options .player-bar {
+  width: 100px;
+}
