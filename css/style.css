@@ -1,3 +1,5 @@
+/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,3 +9,59 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+li {
+  list-style-type: none;
+}
+
+/* CUSTOM PROPS */
+
+:root {
+  --player-height: 90px;
+  --player-bg-color: grey;
+  --app-navbar-width: 200px;
+  --navbar-bg-color: #1B1B1B;
+}
+
+/* CUSTOM PROPS */
+
+.d-flex {
+  display: flex;
+} 
+
+
+/* APP CONTAINER */
+
+#app-container {
+  height: calc(100vh - var(--player-height));
+  display: flex;
+}
+
+
+/* APP NAVBAR */
+
+#app-navbar {
+  width: var(--app-navbar-width);
+  background-color: var(--navbar-bg-color);
+}
+
+
+/* APP MAIN */
+
+#app-main {
+  flex-grow: 1;
+}
+
+#main-top-bar {
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* APP PLAYER */
+
+#app-player {
+  background-color: var(--player-bg-color);
+  height: var(--player-height);
+}
+
