@@ -15,6 +15,15 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+span {
+  display: inline-block;
+}
+
 /* CUSTOM PROPS */
 
 :root {
@@ -41,33 +50,56 @@ li {
 
 /* APP NAVBAR */
 
+
+#app-navbar section:first-child {
+  margin-bottom: 1.5rem;
+}
+
+
 #app-navbar {
   width: var(--app-navbar-width);
   background-color: var(--navbar-bg-color);
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   color: white;
 }
 
 .app-navbar-top {
-  border: 2px dashed red;
+  padding: 0 1rem;
 }
 
-
 .app-navbar-bottom {
-  border: 2px dashed red;
+  padding: 0 1rem;
+  border: 2px solid deeppink;
+  margin-top: auto;
+}
+
+#app-navbar li {
+  margin: 7px 0;
 }
 
 .logo-spotify {
   width: 150px;
 }
 
+#app-navbar .fa-solid {
+  width: 15px;
+  margin-right: 1rem;
+}
+
+#app-navbar .fa-circle-user {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.app-navbar-bottom h4 {
+  display: inline-block;  
+}  
 
 /* APP MAIN */
 
 #app-main {
   flex-grow: 1;
-  border: 4px dashed green;
   overflow: auto;
   background-color: rgb(28, 35, 48);
 }
@@ -87,10 +119,11 @@ li {
   align-items: center;
 }
 
-.button {
-  background-color: lightblue;
+.btn {
+  background-color: black;
   padding: 5px 10px;
   border-radius: 20px;
+  border: 2px solid white;
 }
 
 .categories {
@@ -105,7 +138,7 @@ li {
   padding: 0 5px;
 }
 
-section {
+#app-main section {
   padding: 2rem 0;
 }
 
@@ -143,16 +176,6 @@ section {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* APP PLAYER */
 
 #app-player {
@@ -166,13 +189,20 @@ section {
 }
 
 .current-song {
-  border: 2px solid red;
+  align-items: center;
+}
+
+.current-song .fa-regular {
+  margin: 0 7px;
 }
 
 .wrapper-current-song-info {
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   text-align: left;
+  margin-left: 1rem;
+  margin-right: 3rem;
+
 }
 
 
