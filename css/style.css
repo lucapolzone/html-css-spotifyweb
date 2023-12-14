@@ -67,6 +67,15 @@ li {
 #app-main {
   flex-grow: 1;
   border: 4px dashed green;
+  overflow: auto;
+}
+
+#main-content {
+  padding: 0 2rem;
+}
+
+#main-content h2 {
+  margin-bottom: 1rem;
 }
 
 #main-top-bar {
@@ -82,10 +91,9 @@ li {
   border-radius: 20px;
 }
 
-/* .categories {
-  margin: 0 auto;
-  width: 100%;
-} */
+.categories {
+  margin-top: 1rem;
+}
 
 .categories ul {
   justify-content: center;
@@ -94,6 +102,60 @@ li {
 .categories li {
   padding: 0 5px;
 }
+
+section {
+  padding: 2rem 0;
+}
+
+
+/* Grid */
+
+
+.container {
+  padding: 0 10px;
+  border-left: 2px dashed red;
+  border-right: 2px dashed red;
+}
+
+.row {
+  margin: 0 -10px;
+}
+
+.col {
+  padding: 0 5px;
+}
+
+.card {
+  border-right: 2px dashed aqua;
+}
+
+.card img {
+  width: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* APP PLAYER */
 
