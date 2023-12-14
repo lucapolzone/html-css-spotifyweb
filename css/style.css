@@ -119,6 +119,7 @@ span {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .btn {
@@ -173,20 +174,25 @@ span {
   width: 170px;
 }
 
-.card img:hover {
+.figure {
+  position: relative;
+}
+
+.figure .fa-circle-play {
+  display: none;
+  z-index: 1;
+  font-size: 5rem;
+  position: absolute;
+  left: 5.5rem;
+  top: 3rem;
+}
+
+.figure:hover img  {
   filter: brightness(40%);
 }
 
-
-figure {
-  
-}
-
-.fa-circle-play {
-  /* display: none; */
-  font-size: 5rem;
-  position: absolute;
-  /* bottom: 0; */
+.figure:hover .fa-circle-play {
+  display: block;
 }
 
 
