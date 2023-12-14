@@ -68,6 +68,14 @@ span {
   padding: 0 1rem;
 }
 
+/* .app-navbar-top section:first-child {
+  z-index: -1;
+} */
+
+.app-navbar-top section ul:last-child {
+  overflow: auto;
+}
+
 .app-navbar-bottom {
   padding: 0 1rem;
   margin-top: auto;
@@ -86,6 +94,10 @@ span {
   margin-right: 1rem;
 }
 
+#app-navbar .fa-solid.fa-plus {
+  margin-right: 0;
+}
+
 #app-navbar .fa-circle-user {
   font-size: 2rem;
   margin-right: 2rem;
@@ -94,6 +106,22 @@ span {
 .app-navbar-bottom h4 {
   display: inline-block;  
 }  
+
+.wrapper-plus {
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: var(--navbar-bg-color);
+}
+
+li.d-flex {
+  gap: 5px;
+  align-items: center;
+}
+
+
 
 /* APP MAIN */
 
@@ -119,7 +147,7 @@ span {
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 .btn {
@@ -151,8 +179,8 @@ span {
 
 .container {
   padding: 0 10px;
-  border-left: 2px dashed red;
-  border-right: 2px dashed red;
+  /* border-left: 2px dashed red;
+  border-right: 2px dashed red; */
 }
 
 .row {
@@ -162,8 +190,8 @@ span {
 .col {
   padding: 0 5px;
   width: calc(100% / 6);
-  border-left: 2px dashed aqua;
-  border-right: 2px dashed aqua;
+  /* border-left: 2px dashed aqua;
+  border-right: 2px dashed aqua; */
 }
 
 .card {
@@ -180,7 +208,6 @@ span {
 
 .figure .fa-circle-play {
   display: none;
-  z-index: 1;
   font-size: 5rem;
   position: absolute;
   left: 5.5rem;
@@ -204,12 +231,16 @@ footer#app-player {
   justify-content: space-between;
 }
 
+
+
 .current-song-thumbnail {
   width: 80px;
 }
 
 .current-song {
   align-items: center;
+  border: 2px solid red;
+  width: 300px;
 }
 
 .current-song .fa-regular {
@@ -221,13 +252,42 @@ footer#app-player {
   justify-content: center;
   text-align: left;
   margin-left: 1rem;
-  margin-right: 3rem;
-
+  margin-right: 2rem;
 }
 
 .player {
   border: 2px solid red;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
+
+.player li {
+  margin: 0 1rem;
+}
+
+.player-buttons-top {
+  justify-content: center;
+}  
+
+.player-buttons-top li {
+  font-size: 1.5rem;
+}  
+
+.player-buttons-bottom {
+  align-items: center;
+}
+
+.player-bar {
+  width: 500px;
+  height: 5px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+
 .player-right-options {
   border: 2px solid red;
+  width: 300px;
 }
+
