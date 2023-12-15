@@ -31,6 +31,7 @@ span {
   --player-bg-color: grey;
   --app-navbar-width: 260px;
   --navbar-bg-color: #1B1B1B;
+  --element-spacing: 15px;
 }
 
 /* CUSTOM PROPS */
@@ -134,8 +135,20 @@ li.d-flex {
   padding: 0 2rem;
 }
 
-#main-content h2 {
-  margin-bottom: 1rem;
+
+#app-main section:first-of-type .main-content-title {
+  margin-bottom: 2rem;
+}
+
+
+.main-content-title {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.main-content-subtitle {
+  margin-left: 20px;
+  margin-bottom: 2rem;
 }
 
 #main-top-bar {
@@ -151,13 +164,14 @@ li.d-flex {
 
 .btn {
   background-color: black;
-  padding: 5px 10px;
-  border-radius: 20px;
   border: 2px solid white;
+  border-radius: 20px;
+  margin-right: var(--element-spacing);
+  padding: 5px 10px;
 }
 
 .categories {
-  margin-top: 1rem;
+  margin-top: var(--element-spacing);
 }
 
 .categories ul {
@@ -165,7 +179,7 @@ li.d-flex {
 }
 
 .categories li {
-  padding: 0 5px;
+  padding: 0 var(--element-spacing);
 }
 
 #app-main section {
@@ -187,7 +201,7 @@ li.d-flex {
 }
 
 .col {
-  padding: 0 5px;
+  padding: 0 25px;
   width: calc(100% / 6);
   /* border-left: 2px dashed aqua;
   border-right: 2px dashed aqua; */
@@ -199,14 +213,12 @@ li.d-flex {
 
 .card img {
   /* width: 170px; */
-  width: 65%;
+  width: 100%;
   min-width: 50px;
 }
 
 .figure {
   position: relative;
-  height: 100%;
-  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -224,6 +236,11 @@ li.d-flex {
 .figure:hover .fa-circle-play {
   display: block;
 }
+
+.caption {
+  margin-top: var(--element-spacing);
+}
+
 
 
 /* APP PLAYER */
