@@ -29,7 +29,7 @@ span {
 :root {
   --player-height: 90px;
   --player-bg-color: grey;
-  --app-navbar-width: 200px;
+  --app-navbar-width: 260px;
   --navbar-bg-color: #1B1B1B;
 }
 
@@ -126,7 +126,6 @@ li.d-flex {
 /* APP MAIN */
 
 #app-main {
-  flex-grow: 1;
   overflow: auto;
   background-color: rgb(28, 35, 48);
 }
@@ -199,19 +198,23 @@ li.d-flex {
 }
 
 .card img {
-  width: 170px;
+  /* width: 170px; */
+  width: 65%;
+  min-width: 50px;
 }
 
 .figure {
   position: relative;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .figure .fa-circle-play {
   display: none;
   font-size: 5rem;
   position: absolute;
-  left: 5.5rem;
-  top: 3rem;
 }
 
 .figure:hover img  {
@@ -286,7 +289,7 @@ footer#app-player {
 }
 
 .player-right-options {
-  /* border: 2px solid red; */
+  border: 2px solid red;
   width: 300px;
   font-size: 1rem;
 }
@@ -299,5 +302,29 @@ footer#app-player {
 
 
 .player-right-options .player-bar {
-  width: 100px;
+  width: 120px;
 }
+
+
+/* Media query 920px */
+
+@media screen and (max-width: 920px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+
+  .col {
+    width: calc(100% / 4);
+  }
+
+  #main-content {
+    background-color: red;
+  }
+
+
+}
+
+/* Media query 768px */
+
+/* Media query 480px */
