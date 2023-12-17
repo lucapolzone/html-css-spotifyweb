@@ -226,6 +226,20 @@ li.d-flex {
   align-items: center;
 }
 
+.rounded-container {
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  aspect-ratio: 1;
+  min-width: 50px;
+
+}
+
+.rounded-img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .figure .fa-circle-play {
   display: none;
   font-size: 5rem;
