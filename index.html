@@ -26,10 +26,11 @@
       <div class="app-navbar-top">
         <ul>
           <li><a href="#"><img src="./img/logo.svg" class="logo-spotify" alt="logo-spotify"></a></li>
-          <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+          <li><a href="#"><img src="./img/logo-small.svg" id="icon-spotify"></li>
+          <li><i class="fa-solid fa-house"></i><a href="#"><span>Home</span></a></li>
           <!-- <li><img src="./img/home.svg" alt=""><a href="#">Home</a></li> -->
-          <li><i class="fa-solid fa-magnifying-glass"></i><a href="#">Cerca</a></li>
-          <li><i class="fa-solid fa-lines-leaning"></i><a href="#">La tua libreria</a></li>
+          <li><i class="fa-solid fa-magnifying-glass"></i><a href="#"><span>Cerca</span></a></li>
+          <li><i class="fa-solid fa-lines-leaning"></i><a href="#"><span>La tua libreria</span></a></li>
         </ul>
       </div>  
 
@@ -66,9 +67,9 @@
       </div>        
       <div class="app-navbar-bottom">
         <ul>
-          <li><i class="fa-solid fa-circle-arrow-down"></i>Installa app</li>
+          <li><i class="fa-solid fa-circle-arrow-down"></i><span>Installa app</span></li>
           <li><hr /></li>
-          <li><i class="fa-solid fa-circle-user"></i><h4>John Doe</h4></li>
+          <li><i class="fa-solid fa-circle-user"></i><h4><span>John Doe</span></h4></li>
         </ul>
       </div>      
     </nav>
@@ -239,7 +240,7 @@
           </div>
         </section>
 
-      
+      </div>      
     </main>
   </div>
   <footer id="app-player" class="d-flex">
@@ -249,8 +250,10 @@
         <h4>Sinister</h4>
         <p>Brano nome</p>
       </div>
-      <span><i class="fa-regular fa-heart"></i></span>
-      <span><i class="fa-regular fa-folder"></i></span>      
+      <div class="current-song-options d-flex">
+        <span><i class="fa-regular fa-heart"></i></span>
+        <span><i class="fa-regular fa-folder"></i></span>
+      </div>
     </div>
     <div class="player d-flex">
         <ul class="player-buttons-top d-flex">

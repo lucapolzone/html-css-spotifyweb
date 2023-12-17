@@ -87,6 +87,11 @@ span {
   width: 150px;
 }
 
+#icon-spotify {
+  display: none;
+  width: 20px;
+}
+
 #app-navbar .fa-solid {
   width: 15px;
   margin-right: 1rem;
@@ -201,6 +206,7 @@ li.d-flex {
 
 .row {
   margin: 0 -10px;
+  flex-wrap: wrap;
 }
 
 .col {
@@ -269,15 +275,16 @@ footer#app-player {
 }
 
 
-
 .current-song-thumbnail {
   width: 80px;
+  padding-left: var(--element-spacing);
 }
 
 .current-song {
   align-items: center;
   /* border: 2px solid red; */
-  width: 300px;
+  /* width: 300px; */
+  width: 15%;
 }
 
 .current-song .fa-regular {
@@ -288,8 +295,7 @@ footer#app-player {
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  margin-left: 1rem;
-  margin-right: 2rem;
+  margin: 0 1rem;
 }
 
 .player {
@@ -297,6 +303,7 @@ footer#app-player {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  width: 35%;
 }
 
 .player li {
@@ -324,7 +331,8 @@ footer#app-player {
 
 .player-right-options {
   /* border: 2px solid red; */
-  width: 300px;
+  /* width: 300px; */
+  width: 15%;
   font-size: 1rem;
 }
 
@@ -340,25 +348,182 @@ footer#app-player {
 }
 
 
-/* Media query 920px */
 
-@media screen and (max-width: 920px) {
-  .row {
-    flex-wrap: wrap;
+/* Media query player-bar */
+
+@media screen and (max-width: 1620px) {
+  .player-bar {
+    width: 400px;
   }
+}
 
 
+/* Media query screen medium */
+
+@media screen and (max-width: 992px) {
   .col {
     width: calc(100% / 4);
   }
 
-  #main-content {
-    background-color: red;
+  .caption h3 {
+    font-size: 0.9rem;
   }
 
+  .caption p {
+    margin-bottom: 40px;
+  }
+
+  .categories li {
+    font-size: 0.8rem;
+  }
+
+  #app-main section {
+    padding: 1rem 0;
+  }
+
+  .current-song {
+    width: 25%;
+  }
+  
+  .player-bar {
+    width: 190px;
+  } 
+
+  .player-right-options {
+    width: 25%;
+  }
+
+  .wrapper-current-song-info h4 {
+    font-size: 0.8rem;
+  }
+
+  .wrapper-current-song-info p {
+    font-size: 0.6rem;
+  }
+
+  .player-buttons-bottom {
+    font-size: 0.8rem;
+  }
+
+} 
+
+
+/* Media query screen small */
+
+@media screen and (max-width: 768px) {
+
+  .col {
+    width: 50%;
+  }
+
+  .categories {
+    margin-bottom: 2rem;
+  }
+
+  .categories li {
+    font-size: inherit;
+  }
+
+  .categories ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  
+  .player-bar {
+    width: 170px;
+  } 
+
+    
+  .player li {
+    margin: 0 0.5rem;
+  } 
+
+
+
+  .player-right-options .player-bar {
+    width: 100px;
+  }
+
+  .current-song-options {
+    flex-direction: column;
+  }
 
 }
 
-/* Media query 768px */
 
-/* Media query 480px */
+
+/* Media query screen x-small */
+
+@media screen and (max-width: 576px) {
+
+  #app-navbar {
+    width: 50px;
+  }
+  
+  #app-navbar .fa-solid {
+    margin-right: 0;
+  }
+
+
+  .app-navbar-top span {
+    display: none;
+  }
+  
+  .app-navbar-top {
+    text-align: center;
+  }
+
+  .logo-spotify {
+    display: none;
+  }
+
+  #icon-spotify {
+    display: inline-block;
+  }
+
+  .app-navbar-middle {
+    display: none;
+  }
+
+  .app-navbar-bottom span {
+    display: none;
+  }
+
+  #app-navbar .fa-circle-user {
+    font-size: 1.4rem;
+  }
+
+  #app-navbar hr {
+    display: none;
+  }
+
+  .fa-solid.fa-circle-arrow-down {
+    margin-left: 3px;
+  }
+
+  .player-bar {
+   width: 120px; 
+  }
+
+  .player-right-options .player-bar {
+    width: 50px;
+  }
+
+  .current-song-thumbnail {
+    width: 60px;
+  }
+
+  .player-buttons-top i {
+    font-size: 1.1rem;
+  }
+
+  .current-song .fa-regular {
+    margin: 0;
+  }  
+
+  .player-right-options i {
+    font-size: 0.8rem;
+  }
+
+}
